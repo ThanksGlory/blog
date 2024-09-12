@@ -105,8 +105,8 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: 'git'
-  repo: git@47.108.234.56:/home/git/blog.git
+  type: git
+  repo: https://github.com/ThanksGlory/blog-web
   branch: master
 
 #Live2D动画
