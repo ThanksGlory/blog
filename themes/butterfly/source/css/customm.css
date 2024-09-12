@@ -1,0 +1,43 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+#live2d-widget {
+  right: 35px !important;
+  bottom: -55px !important;
+}
+
+#local-search {
+  font-family: '隶书';
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  left: -66px !important;
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+  left: 0 !important;
+}
+
+#aside-content.aside-content
+  > .sticky_layout
+  > .card-widget.card-clock
+  > .card-glass
+  > .card-background {
+  background-color: unset;
+  box-shadow: unset;
+}
+
+.layout > div:first-child:not(.recent-posts){
+  padding: 35px 40px 50px !important;
+}
+
+#post > #post-info .post-title{
+  margin-top: 0px !important;
+}
+
+@media screen and (max-width: 1366px) {
+  .aplayer.no-destroy {
+    display: none !important;
+  }
+}
