@@ -127,17 +127,14 @@ live2d:
   mobile:
     show: false
 
-# electric_clock
-# see https://akilar.top/posts/4e39cf4a/
+# 电子时钟
 electric_clock:
-  enable: true # 开关
-  priority: 5 #过滤器优先权
-  enable_page: all # 应用页面
-  exclude:
-    # - /posts/
-    # - /about/
-  layout: # 挂载容器类型
+  # font: Ringing # UnidreamLED(default),Commodore,Computerfont,Digitalsystem,Gameover,Hacked,LCD,Leddisplay,Ringing
+  priority: 5
+  enable: false
+  enable_page: all
+  layout:
     type: class
     name: sticky_layout
     index: 0
-  loading: /img/loading.jfif #加载动画自定义
+  # temple_html: '<div class="card-widget card-clock"><div class="card-glass"><div class="card-background"><div class="card-content"><div id="hexo_electric_clock"><img id="card-clock-loading" src="https://cdn.jsdelivr.net/gh/hotarugali/hexo-electric-clock-plus@1.2.2/images/weather/loading.gif" style="height: 120px; width: 100%;" data-ll-status="loading" class="entered loading"></div></div></div></div></div>'

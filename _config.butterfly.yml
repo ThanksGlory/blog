@@ -837,7 +837,7 @@ inject:
   bottom:
     # - <script src="xxxx"></script>
     # netease 网易云音乐 tencent QQ 音乐
-    - <div class="aplayer no-destroy" style="z-index:100000;" data-id="1231276946" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="auto" data-autoplay="false" muted></div> # xxxxxxxxxx
+    # - <div class="aplayer no-destroy" style="z-index:100000;" data-id="1231276946" data-server="tencent" data-type="playlist" data-fixed="true" data-mini="true" data-listFolded="false" data-order="random" data-preload="auto" data-autoplay="false" muted></div> # xxxxxxxxxx
 # CDN
 # Don't modify the following settings unless you know how they work
 # 非必要請不要修改
