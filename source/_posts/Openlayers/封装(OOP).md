@@ -5,7 +5,6 @@ typora-root-url: ../
 cover: /images/cover/openlayers_cover.png
 top_img: false
 tags: Map
-comments: false
 categories:
   - Map(地图)
   - openlayers

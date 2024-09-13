@@ -5,7 +5,6 @@ typora-root-url: ../
 cover: /images/cover/promise.png
 top_img: false
 tags: JavaScript
-comments: false
 categories:
   - JavaScript
   - Promise

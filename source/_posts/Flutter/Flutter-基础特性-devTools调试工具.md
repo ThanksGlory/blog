@@ -5,7 +5,7 @@ typora-root-url: ../
 cover: /images/cover/flutter.png
 top_img: false
 tags: Flutter
-comments: false
+
 categories:
   - Flutter
   - flutter基础

@@ -5,7 +5,6 @@ typora-root-url: ../
 cover: /images/cover/crco.png
 top_img: false
 tags: React
-comments: false
 categories:
   - React
 ---

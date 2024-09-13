@@ -5,7 +5,6 @@ typora-root-url: ../
 cover: /images/cover/react.jpg
 top_img: false
 tags: React
-comments: false
 categories:
   - TypeScript
   - React

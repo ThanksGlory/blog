@@ -5,7 +5,7 @@ typora-root-url: ../
 cover: /images/cover/getx_cover.png
 top_img: false
 tags: Flutter
-comments: false
+
 categories:
   - Flutter
   - Getx

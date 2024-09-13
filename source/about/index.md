@@ -3,7 +3,6 @@ title: 滕王阁序
 date: 2022-01-12 22:18:06
 type: 'about'
 top_img: false
-comments: false
 aside: false
 ---
 
