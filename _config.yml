@@ -10,13 +10,13 @@ description: <div>
   <p style="margin:0px;line-height:1.3;font-weight:bold;">地势坤，君子以厚德载物。</p>
   </div>
 keywords: '前端 JavaScript React webpack'
-author: 张秋
+author: Thanks Glory
 language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://www.zhqiu.cn
+url: https://zhangqiu.zeabur.app
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:

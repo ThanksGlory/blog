@@ -247,19 +247,22 @@ addtoany:
   enable: false
   item: facebook,twitter,wechat,sina_weibo,facebook_messenger,email,copy_link
 
+recommend:
+  enable: false
+
 # Comments System
 # --------------------------------------
 
 comments:
   # Up to two comments system, the first will be shown as default
   #use: Disqus,Valine
-  use: Waline
+  use: Valine
   text: true # Display the comment name next to the button
   # lazyload: The comment system will be load when comment element enters the browser's viewport.
   # If you set it to true, the comment count will be invalid
   lazyload: false
   count: true # Display comment count in post's top_img
-  card_post_count: false # Display comment count in Home Page
+  card_post_count: true # Display comment count in Home Page
 
 # disqus
 # https://disqus.com/
@@ -294,36 +297,32 @@ gitalk:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  appId: gLnoPpA1lnWgWizNCooYMk7G-MdYXbMMI # leancloud application app id
-  appKey: XIabb42zuoYVtaotReU53rGG # leancloud application app key
+  enable: true
+  appId: XUmdx98tExB4ay8lhoEz8bWR-MdYXbMMI # leancloud application app id
+  appKey: 1L2OVQdOyiolKtqVSqXhuRlD # leancloud application app key
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
-  placeholder: 记得留下你的暱称和邮箱....可以快速收到回復 # valine comment input placeholder(like: Please leave your footprints )
-  guest_info: nick,mail,link #valine comment header info (nick/mail/link)
+  guest_info: nick,mail #valine comment header info (nick/mail/link)
   recordIP: false # Record reviewer IP
-  serverURLs: # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
+  serverURLs: https://xumdx98t.api.lncldglobal.com # This configuration is suitable for domestic custom domain name users, overseas version will be automatically detected (no need to manually fill in)
   bg: # valine background
   emojiCDN: # emoji CDN
-  enableQQ: false # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
   requiredFields: nick,mail # required fields (nick/mail)
   visitor: false
   option:
-
+    enableQQ: true # enable the Nickname box to automatically get QQ Nickname and QQ Avatar
+    placeholder: 记得留下你的暱称和邮箱....可以快速收到回復 # valine comment input placeholder(like: Please leave your footprints )
 # waline - A simple comment system with backend support fork from Valine
 # https://waline.js.org/
 waline:
-  serverURL: https://blog-api-k1iiggsfv-thanksglory.vercel.app # Waline server address url
-  avatar: monsterid # gravatar style https://zh-tw.gravatar.com/site/implement/images/#default-image
-  avatarCDN: # Gravatar CDN baseURL
-  bg: /img/comment_bg.png # waline background
-  visitor: true
+  serverURL: https://waline-mu-jet.vercel.app # 填写自己刚刚在 Vercel 中绑定的域名
+  bg: # waline background
+  pageview: true
   option:
-    placeholder: 请写下你的想法
-    requiredMeta: []
-    meta: ['nick', 'mail']
-    lang: zh-CN
-    copyright: false
+    requiredMeta: [ nick, mail ] # 选定昵称和评论为必填项
+    locale:
+      placeholder: 昵称和邮箱为必填项，为了您能及时收到相关回复的邮件通知，请确保邮箱的正确性！ # 内容区提示
 
 # utterances
 # https://utteranc.es/
@@ -631,13 +630,13 @@ aside:
     enable: true
     description:
     button:
-      enable: true
+      enable: false
       icon: iconfont fa-gitee
       text: 我的 Gitee
       link: https://gitee.com/thanksglory/blog.git
   card_announcement:
     enable: true
-    content: 觉得有收获的，我只有一个要求，点个赞呗？
+    content: 欢迎访问我的博客！请定期查看，以获取最新的文章和更新。感谢您的支持与关注！
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all

@@ -2,12 +2,13 @@
 title: margin trim
 date: 2024-09-12 17:03:44
 top_img: false
-cover: /images/cover/flex.png
+cover: /images/cover/css.png
 comments: true
 
-tags: margin
+tags: Css
 categories:
   - Css
+  - Margin
 typora-root-url: ../
 ---
 
