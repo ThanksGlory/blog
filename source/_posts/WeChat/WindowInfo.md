@@ -1,5 +1,5 @@
 ---
-title: WindoInfo
+title: WindowInfo
 date: 2024-09-18 13:39:00
 typora-root-url: ../
 cover: /images/cover/wechat.jpg
