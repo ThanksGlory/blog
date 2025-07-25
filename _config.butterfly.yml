@@ -633,7 +633,7 @@ aside:
       enable: true
       icon: 
       text: 我的 GitHub
-      link: https://github.com/ThanksGlory/blog-web
+      link: https://github.com/ThanksGlory/ThanksGlory.github.io
   card_announcement:
     enable: true
     content: 欢迎访问我的博客！请定期查看，以获取最新的文章和更新。感谢您的支持与关注！
