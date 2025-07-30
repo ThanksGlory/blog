@@ -22,8 +22,7 @@ Function.prototype.call1 = function (context) {
   console.log('test call');
   /**
    * 将函数设为对象的属性
-   * 注意：非严格模式下, 
-   * 指定为 null 和 undefined 的 this 值会自动指向全局对象(浏览器中就是 window 对象)
+   * 注意：非严格模式下, 指定为 null 和 undefined 的 this 值会自动指向全局对象(浏览器中就是 window 对象)
    * 值为原始值(数字，字符串，布尔值)的 this 会指向该原始值的自动包装对象(用 Object() 转换
    **/
   context = context ? Object(context) : window;
@@ -46,7 +45,7 @@ function callTest() {
 }
 
 const s1 = callTest.call1(a);
-console.log(s1);
+console.log(s1); // 3
 ```
 
 apply实现过程
