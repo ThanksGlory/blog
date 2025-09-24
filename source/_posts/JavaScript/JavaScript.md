@@ -19,7 +19,7 @@ JavaScript面试题主要考察对JavaScript语言的基础知识、核心概念
 call方法实现过程
 
 ```javascript
-Function.prototype.call1 = function (context) {
+Function.prototype.call = function (context) {
 
   console.log('test call');
   /**
@@ -46,14 +46,14 @@ function callTest() {
   return this.a + this.b;
 }
 
-const s1 = callTest.call1(a);
+const s1 = callTest.call(a);
 console.log(s1); // 3
 ```
 
 apply实现过程
 
 ```javascript
-Function.prototype.apply1 = function (context) {
+Function.prototype.apply = function (context) {
   context = context ? Object(context) : window;
   context.fn = this;
 
@@ -72,20 +72,26 @@ Function.prototype.apply1 = function (context) {
 
 bind实现过程
 
+> 1、获取调用bind的函数。
+>
+> 2、返回一个函数。
+>
+> 3、判断是否是通过new调用的函数。
+>
+> 4、改变this指向并返回返回函数的返回值。
+
 ```javascript
-Function.prototype.bind1 = function (context) {
-  if (typeof this !== 'function') {
-    throw new TypeError('error')
-  }
-  var _this = this
-  var args = [...arguments].slice(1)
-  // 返回一个函数
-  return function Fun() {
-    // 因为返回一个函数， 我们可以 new Fun(), 所以需要判断
-    if (this instanceof Fun) {
-      return new _this(...args, ...arguments)
+Function.prototype.bind = function (context, ...args) {
+  // 获取调用bind的函数
+  var fn = this;
+  if (typeof fn !== 'function') throw new TypeError('this is not a function');
+  return function (...rest) {
+    // 判断是否是通过new调用的函数
+    if (new.target) {
+      return new fn(...args, ...rest)
     }
-    return _this.call(context, ...args, ...arguments)
+    // 改变this指向并返回返回函数的返回值
+    return fn.apply(context, [...args, ...rest])
   }
 }
 ```
@@ -114,7 +120,7 @@ function _new(fn, ...args) {
 }
 ```
 
-tips：`Object.create()` 静态方法以一个现有对象作为原型，创建一个新对象。
+**tips**：`Object.create()` 静态方法以一个现有对象作为原型，创建一个新对象。
 
 ## 手写实现promise函数
 
